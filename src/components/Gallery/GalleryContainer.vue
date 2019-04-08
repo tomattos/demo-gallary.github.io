@@ -1,6 +1,6 @@
 <template>
-  <transition-group class="GallaryContainer row mt-5" name="list" tag="div">
-    <gallary-item
+  <transition-group class="GalleryContainer row mt-5" name="list" tag="div">
+    <Gallery-item
       v-for="(image, i) in images"
       :key="i"
       :name="image.name"
@@ -12,13 +12,13 @@
 </template>
 
 <script>
-import GallaryItem from "./GallaryItem";
+import GalleryItem from "./GalleryItem";
 
 export default {
-  name: "GallaryContainer",
+  name: "GalleryContainer",
 
   components: {
-    GallaryItem
+    GalleryItem
   },
 
   data() {

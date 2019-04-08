@@ -1,17 +1,17 @@
 <template>
-  <div class="GallaryItem col col-md-4 mb-5">
-    <a
-      href
-      class="GallaryItem-remove d-block text-right mb-2"
-      @click.prevent="handleRemoveItem"
-    >- remove</a>
-    <img class="GallaryItem-image" :src="content" :alt="name">
+  <div class="GalleryItem col col-md-4 mb-5">
+    <div class="card">
+      <img class="GalleryItem-image card-img-top" :src="content" :alt="name">
+      <div class="card-body">
+        <button class="GalleryItem-remove btn btn-danger" @click.prevent="handleRemoveItem">Delete</button>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "GallaryItem",
+  name: "GalleryItem",
 
   props: {
     name: {
@@ -39,13 +39,8 @@ export default {
 </script>
 
 <style scoped>
-.GallaryItem-remove {
-  color: red;
-}
-
-.GallaryItem-image {
-  width: 100%;
-  height: 100%;
+.GalleryItem-image {
+  height: 300px;
   object-fit: cover;
 }
 </style>

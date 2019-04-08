@@ -1,6 +1,6 @@
 <template>
   <form
-    class="GallaryCreate form-inline justify-content-center mt-4"
+    class="GalleryCreate form-inline justify-content-center mt-4"
     @submit.prevent="handleSubmit"
   >
     <div class="input-group flex-grow-1">
@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: "GallaryAddForm",
+  name: "GalleryAddForm",
 
   data() {
     return {
