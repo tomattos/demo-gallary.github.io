@@ -2,25 +2,25 @@
   <div class="Layout container">
     <div class="row">
       <div class="col">
-        <h2 class="text-center mt-4">Gallary app</h2>
+        <h2 class="text-center mt-4">Gallery app</h2>
 
-        <gallary-add-form/>
-        <gallary-container/>
+        <gallery-add-form/>
+        <gallery-container/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import GallaryAddForm from "./Gallary/GallaryAddForm";
-import GallaryContainer from "./Gallary/GallaryContainer";
+import GalleryAddForm from "./Gallery/GalleryAddForm";
+import GalleryContainer from "./Gallery/GalleryContainer";
 
 export default {
   name: "Layout",
 
   components: {
-    GallaryAddForm,
-    GallaryContainer
+    GalleryAddForm,
+    GalleryContainer
   }
 };
 </script>
